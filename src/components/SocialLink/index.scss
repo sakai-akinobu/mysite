@@ -9,9 +9,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
 
   .logo {
-    flex: 0 0 auto;
-    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+
+    .svg {
+      width: 80px;
+    }
   }
 }
