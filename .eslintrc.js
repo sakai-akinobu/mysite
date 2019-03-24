@@ -1,8 +1,23 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   plugins: [
+    "react",
     "@typescript-eslint",
   ],
+  extends: [
+    "plugin:react/recommended",
+  ],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
   rules: {
     "@typescript-eslint/class-name-casing": "error",
     "@typescript-eslint/member-delimiter-style": "error",
