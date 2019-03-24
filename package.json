@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx webpack-dev-server --config webpack/development.js",
+    "compile": "npx tsc --noEmit",
     "lint": "npx eslint src/**/*.tsx",
     "lint:fix": "npx eslint --fix src/**/*.tsx"
   },
