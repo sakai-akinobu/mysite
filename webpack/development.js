@@ -48,6 +48,16 @@ module.exports = Object.assign({}, shared, {
           ],
         }),
       },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'images',
+            name: '[name]-[hash].[ext]',
+          },
+        },
+      },
     ],
   },
   resolve: {
@@ -66,7 +76,8 @@ module.exports = Object.assign({}, shared, {
     new ExtractTextPlugin('bundle.css'),
   ],
   devServer: {
-    contentBase: path.join(__dirname, '../public'),
     publicPath: '/dist/',
+    contentBase: path.join(__dirname, '../public'),
+    watchContentBase: true,
   },
 });

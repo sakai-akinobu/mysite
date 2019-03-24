@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 0;
+  background: #252c36;
+  color: #fff;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo {
+    flex: 0 0 auto;
+    width: 80px;
+  }
+}
