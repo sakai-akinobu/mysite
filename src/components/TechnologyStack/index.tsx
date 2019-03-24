@@ -11,26 +11,40 @@ import svgEsLint from './images/eslint.svg';
 import svgPrettier from './images/prettier.svg';
 import svgNodeJs from './images/nodejs.svg';
 import svgNpm from './images/npm.svg';
-import svgMocha from './images/mocha.svg';
+import svgJest from './images/jest.svg';
+
+const technologies: {path: string; name: string}[] = [
+  {path: svgJavaScript, name: 'JavaScript'},
+  {path: svgTypeScript, name: 'TypeScript'},
+  {path: svgBabel, name: 'Babel'},
+  {path: svgFlow, name: 'Flow'},
+  {path: svgReact, name: 'React'},
+  {path: svgRedux, name: 'Redux'},
+  {path: svgEsLint, name: 'ESLint'},
+  {path: svgPrettier, name: 'Prettier'},
+  {path: svgJest, name: 'Jest'},
+  {path: svgNodeJs, name: 'Node.js'},
+  {path: svgNpm, name: 'npm'},
+];
 
 export default function TechnologyStack() {
   return (
     <div className={styles.container}>
       <h2>Technology Stack</h2>
-      <div className={styles.logoContainer}>
-        <img className={styles.logo} src={svgJavaScript} />
-        <img className={styles.logo} src={svgTypeScript} />
-        <img className={styles.logo} src={svgBabel} />
-        <img className={styles.logo} src={svgFlow} />
-        <img className={styles.logo} src={svgReact} />
-        <img className={styles.logo} src={svgRedux} />
-      </div>
-      <div className={styles.logoContainer}>
-        <img className={styles.logo} src={svgEsLint} />
-        <img className={styles.logo} src={svgPrettier} />
-        <img className={styles.logo} src={svgNodeJs} />
-        <img className={styles.logo} src={svgNpm} />
-        <img className={styles.logo} src={svgMocha} />
+      <p className={styles.description}>
+        The following technologies are currently in use.
+      </p>
+      <div>
+        <div className={styles.logoContainer}>
+          {
+            technologies.map((technology, index) => (
+              <div key={index} className={styles.logo}>
+                <img className={styles.svg} src={technology.path} />
+                <div className={styles.name}>{technology.name}</div>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   );

@@ -1,19 +1,39 @@
+@import '../../styles/variables.scss';
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 128px 0;
-  background: #252c36;
-  color: #fff;
+  background: $BACKGROUND-COLOR-DARK;
+  color: $TEXT-COLOR-WHITE;
+}
+
+.description {
+  color: $TEXT-COLOR-GREY;
 }
 
 .logoContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
 
   .logo {
-    flex: 0 0 auto;
-    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+    .svg {
+      flex: 0 0 auto;
+      width: 80px;
+    }
+    .name {
+      margin-top: 8px;
+      color: $TEXT-COLOR-GREY;
+    }
   }
 }
