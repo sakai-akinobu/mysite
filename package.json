@@ -11,6 +11,11 @@
   },
   "author": "Akinobu SAKAI <sakai.akinobu@gmail.com> (https://github.com/sakai-akinobu)",
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run compile && npm run lint"
+    }
+  },
   "devDependencies": {
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.3",
