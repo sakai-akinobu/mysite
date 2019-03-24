@@ -7,7 +7,9 @@
     "dev": "npx webpack-dev-server --config webpack/development.js",
     "compile": "npx tsc --noEmit",
     "lint": "npx eslint src/**/*.tsx",
-    "lint:fix": "npx eslint --fix src/**/*.tsx"
+    "lint:fix": "npx eslint --fix src/**/*.tsx",
+    "stylelint": "npx stylelint src/**/*.scss",
+    "stylelint:fix": "npx stylelint --fix src/**/*.scss"
   },
   "author": "Akinobu SAKAI <sakai.akinobu@gmail.com> (https://github.com/sakai-akinobu)",
   "license": "MIT",
