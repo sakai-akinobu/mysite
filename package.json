@@ -15,7 +15,7 @@
   "license": "MIT",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run compile && npm run lint"
+      "pre-commit": "npm run compile && npm run lint && npm run stylelint"
     }
   },
   "devDependencies": {
