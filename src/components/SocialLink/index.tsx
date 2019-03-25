@@ -15,7 +15,7 @@ const socialLinks: {svg: string; url: string}[] = [
 
 export default function SocialLink() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.logoContainer}>
         {
           socialLinks.map(({svg, url}, index) => (
@@ -27,6 +27,6 @@ export default function SocialLink() {
           ))
         }
       </div>
-    </div>
+    </section>
   );
 }

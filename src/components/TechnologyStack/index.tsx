@@ -29,25 +29,23 @@ const technologies: {path: string; name: string}[] = [
 
 export default function TechnologyStack() {
   return (
-    <div className={styles.container}>
-      <h2>Technology Stack</h2>
+    <section className={styles.container}>
       <p className={styles.description}>
-        The following technologies are currently in use.
+        The following technologies are commonly I used recently.
+        I especially like React and TypeScript.
       </p>
-      <div>
-        <div className={styles.logoContainer}>
-          {
-            technologies.map((technology, index) => (
-              <div key={index} className={styles.logo}>
-                <div className={styles.svgContainer}>
-                  <img className={styles.svg} src={technology.path} />
-                </div>
-                <div className={styles.name}>{technology.name}</div>
+      <div className={styles.logoContainer}>
+        {
+          technologies.map((technology, index) => (
+            <div key={index} className={styles.logo}>
+              <div className={styles.svgContainer}>
+                <img className={styles.svg} src={technology.path} />
               </div>
-            ))
-          }
-        </div>
+              <div className={styles.name}>{technology.name}</div>
+            </div>
+          ))
+        }
       </div>
-    </div>
+    </section>
   );
 }
