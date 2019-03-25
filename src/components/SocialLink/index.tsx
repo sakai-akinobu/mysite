@@ -21,7 +21,9 @@ export default function SocialLink() {
           socialLinks.map(({svg, url}, index) => (
             <div key={index} className={styles.logo}>
               <a href={url}>
-                <img className={styles.svg} src={svg} />
+                <div className={styles.svgContainer}>
+                  <img className={styles.svg} src={svg} />
+                </div>
               </a>
             </div>
           ))
