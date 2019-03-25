@@ -53,8 +53,9 @@ module.exports = Object.assign({}, shared, {
         use: {
           loader: 'file-loader',
           options: {
-            outputPath: 'images',
             name: '[name]-[hash].[ext]',
+            outputPath: 'images',
+            publicPath: (path) => `/dist/images/${path}`,
           },
         },
       },
