@@ -39,7 +39,9 @@ export default function TechnologyStack() {
           {
             technologies.map((technology, index) => (
               <div key={index} className={styles.logo}>
-                <img className={styles.svg} src={technology.path} />
+                <div className={styles.svgContainer}>
+                  <img className={styles.svg} src={technology.path} />
+                </div>
                 <div className={styles.name}>{technology.name}</div>
               </div>
             ))
