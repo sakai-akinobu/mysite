@@ -3,6 +3,7 @@ import * as React from 'react';
 import AboutMe from '../AboutMe';
 import TechnologyStack from '../TechnologyStack';
 import SocialLink from '../SocialLink';
+import Footer from '../Footer';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <AboutMe />
       <TechnologyStack />
       <SocialLink />
+      <Footer />
     </>
   );
 }
