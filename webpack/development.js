@@ -9,5 +9,7 @@ module.exports = Object.assign({}, shared, {
     publicPath: '/dist/',
     contentBase: path.join(__dirname, '../public'),
     watchContentBase: true,
+    host: '0.0.0.0',
+    disableHostCheck: true,
   },
 });
