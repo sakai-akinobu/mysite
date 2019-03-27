@@ -46,13 +46,22 @@ module.exports = {
         }),
       },
       {
-        test: /\.(svg|jpg)$/,
+        test: /\.jpg$/,
         use: {
           loader: 'file-loader',
           options: {
             name: '[name]-[hash].[ext]',
             outputPath: 'images',
             publicPath: (path) => `/dist/images/${path}`,
+          },
+        },
+      },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'svg-url-loader',
+          options: {
+            noquotes: true,
           },
         },
       },
