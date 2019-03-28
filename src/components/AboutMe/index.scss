@@ -5,6 +5,10 @@
   align-items: center;
   flex-direction: column;
   background: #cf4646;
+  background-image: url('./images/triangle-1.svg'), url('./images/triangle-2.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
 
   .inner {
     display: flex;
