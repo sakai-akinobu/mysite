@@ -4,6 +4,7 @@ import ScrollReveal from 'scrollreveal';
 
 import AboutMe from '../AboutMe';
 import TechnologyStack from '../TechnologyStack';
+import GitHub from '../GitHub';
 import SocialLink from '../SocialLink';
 import Footer from '../Footer';
 
@@ -23,6 +24,7 @@ export default function App() {
     <>
       <AboutMe />
       <TechnologyStack />
+      <GitHub />
       <SocialLink />
       <Footer />
     </>
