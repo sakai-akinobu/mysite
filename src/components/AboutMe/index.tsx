@@ -6,7 +6,7 @@ import me from './images/me.jpg';
 export default function AboutMe() {
   return (
     <section className={styles.container}>
-      <div className={styles.inner}>
+      <div className={`transition ${styles.inner}`}>
         <div>
           <img src={me} className={styles.me} />
         </div>

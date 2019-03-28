@@ -34,7 +34,7 @@ export default function TechnologyStack() {
         The following technologies are commonly I used recently.
         I especially like React and TypeScript.
       </p>
-      <div className={styles.logoContainer}>
+      <div className={`transition ${styles.logoContainer}`}>
         {
           technologies.map((technology, index) => (
             <div key={index} className={styles.logo}>
