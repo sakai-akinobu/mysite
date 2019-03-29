@@ -17,7 +17,6 @@ export default function Footer() {
   return (
     <footer>
       <div className={styles.container}>
-        <div className={styles.copyright}>&copy;Akinobu Sakai {new Date().getFullYear()}</div>
         <div className={styles.logoContainer}>
           {
             socialLinks.map(({svg, url}, index) => (
@@ -31,6 +30,7 @@ export default function Footer() {
             ))
           }
         </div>
+        <div className={styles.copyright}>&copy;Akinobu Sakai {new Date().getFullYear()}</div>
       </div>
     </footer>
   );
