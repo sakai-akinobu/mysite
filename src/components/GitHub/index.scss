@@ -15,6 +15,11 @@
       margin: 0 4px;
       padding: 0 4px;
       max-width: 670px;
+      opacity: 0;
+
+      &.loaded {
+        opacity: 1;
+      }
 
       :global {
         .contrib-footer {
