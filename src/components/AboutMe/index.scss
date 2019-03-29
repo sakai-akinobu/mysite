@@ -9,12 +9,12 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
+  padding: 128px 12px;
 
   .inner {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 128px 12px;
     max-width: 600px;
     color: $TEXT-COLOR-BLACK;
     line-height: 1.6;
