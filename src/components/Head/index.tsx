@@ -23,6 +23,7 @@ export default function Head() {
         gtag('config', 'UA-7106314-14');
       `}}>
       </script>
+      <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.js"></script>
     </head>
   );
 }
