@@ -4,7 +4,6 @@ import styles from './index.scss';
 import svgJavaScript from './images/javascript.svg';
 import svgTypeScript from './images/typescript.svg';
 import svgBabel from './images/babel.svg';
-import svgFlow from './images/flow.svg';
 import svgReact from './images/react.svg';
 import svgRedux from './images/redux.svg';
 import svgEsLint from './images/eslint.svg';
@@ -17,7 +16,6 @@ const technologies: {path: string; name: string}[] = [
   {path: svgJavaScript, name: 'JavaScript'},
   {path: svgTypeScript, name: 'TypeScript'},
   {path: svgBabel, name: 'Babel'},
-  {path: svgFlow, name: 'Flow'},
   {path: svgReact, name: 'React'},
   {path: svgRedux, name: 'Redux'},
   {path: svgEsLint, name: 'ESLint'},
