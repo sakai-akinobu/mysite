@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack --config webpack/production.js",
-    "dev": "npx webpack-dev-server --config webpack/development.js",
+    "build": "npm run prerender && npx webpack --config webpack/production.js",
+    "dev": "npm run prerender && npx webpack-dev-server --config webpack/development.js",
+    "prerender": "npx webpack --config webpack/prerender.js && node ./tmp/prerender.js > public/index.html",
     "compile": "npx tsc --noEmit",
     "lint": "npx eslint src/**/*.tsx",
     "lint:fix": "npx eslint --fix src/**/*.tsx",
