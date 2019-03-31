@@ -8,7 +8,7 @@ export default function AboutMe() {
     <section className={styles.container}>
       <div className={`transition ${styles.inner}`}>
         <div>
-          <img src={me} className={styles.me} />
+          <img src={me} className={styles.me} alt="me" />
         </div>
         <h1 className={styles.hello}>Hello, I&apos;m Akinobu!</h1>
         <p>Front-end developer based in Tokyo, Japan.</p>
