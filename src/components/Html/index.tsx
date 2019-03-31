@@ -6,7 +6,7 @@ import Head from "../Head";
 export default function Html() {
   return (
     <>
-      <html>
+      <html lang="en">
         <Head />
         <body>
           <div id="app">
