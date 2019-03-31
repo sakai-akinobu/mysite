@@ -6,11 +6,11 @@ import svgInstagram from './images/instagram.svg';
 import svg500px from './images/500px.svg';
 import svgLastFm from './images/lastfm.svg';
 
-const socialLinks: {svg: string; url: string}[] = [
-  {svg: svgGitHub, url: 'https://github.com/sakai-akinobu'},
-  {svg: svgInstagram, url: 'https://www.instagram.com/sakai.akinobu/'},
-  {svg: svg500px, url: 'https://500px.com/nobyu'},
-  {svg: svgLastFm, url: 'http://www.lastfm.jp/user/nobyu'},
+const socialLinks: {name: string; svg: string; url: string}[] = [
+  {name: 'GitHub', svg: svgGitHub, url: 'https://github.com/sakai-akinobu'},
+  {name: 'Instagram', svg: svgInstagram, url: 'https://www.instagram.com/sakai.akinobu/'},
+  {name: '500px', svg: svg500px, url: 'https://500px.com/nobyu'},
+  {name: 'Last.fm', svg: svgLastFm, url: 'http://www.lastfm.jp/user/nobyu'},
 ];
 
 export default function Footer() {
@@ -19,11 +19,11 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.logoContainer}>
           {
-            socialLinks.map(({svg, url}, index) => (
+            socialLinks.map(({name, svg, url}, index) => (
               <div key={index} className={styles.logo}>
                 <a href={url}>
                   <div className={styles.svgContainer}>
-                    <img className={styles.svg} src={svg} />
+                    <img className={styles.svg} src={svg} alt={name} />
                   </div>
                 </a>
               </div>
