@@ -1,5 +1,5 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: './src/index.tsx',
@@ -14,60 +14,60 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 2,
-                sourceMap: true,
-              },
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2,
+              sourceMap: true,
             },
-            {
-              loader: 'postcss-loader',
-              options: {
-                sourceMap: true,
-                plugins: [
-                  require('autoprefixer')(),
-                ],
-              },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins: [
+                require('autoprefixer')(),
+              ],
             },
-          ],
-        }),
+          },
+        ],
       },
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                importLoaders: 2,
-                sourceMap: true,
-                localIdentName: '[local]___[hash:base64:5]',
-              },
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 2,
+              sourceMap: true,
+              localIdentName: '[local]___[hash:base64:5]',
             },
-            {
-              loader: 'postcss-loader',
-              options: {
-                sourceMap: true,
-                plugins: [
-                  require('autoprefixer')(),
-                ],
-              },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins: [
+                require('autoprefixer')(),
+              ],
             },
-            {
-              loader: 'sass-loader',
-              options: {
-                outputStyle: 'expanded',
-                sourceMap: true,
-              },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              outputStyle: 'expanded',
+              sourceMap: true,
             },
-          ],
-        }),
+          },
+        ],
       },
       {
         test: /\.jpg$/,
@@ -103,6 +103,8 @@ module.exports = {
     path: path.resolve(__dirname, '../public/dist'),
   },
   plugins: [
-    new ExtractTextPlugin('bundle.css'),
+    new MiniCssExtractPlugin({
+      filename: 'bundle.css',
+    }),
   ],
 };
