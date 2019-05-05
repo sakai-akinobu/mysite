@@ -1,5 +1,12 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "labels": ["renovate"],
+  "schedule": [
+    "before 3am on the first day of the month"
+  ],
+  "patch": {
+    "automerge": true
+  }
 }
