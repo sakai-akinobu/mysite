@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/react": "16.8.24",
     "@types/react-dom": "16.8.4",
-    "@types/scrollreveal": "0.0.4",
+    "@types/scrollreveal": "0.0.5",
     "@typescript-eslint/eslint-plugin": "1.7.0",
     "autoprefixer": "9.6.1",
     "css-loader": "2.1.1",
