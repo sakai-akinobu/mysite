@@ -5,12 +5,14 @@ import svgGitHub from './images/github.svg';
 import svgInstagram from './images/instagram.svg';
 import svg500px from './images/500px.svg';
 import svgLastFm from './images/lastfm.svg';
+import svgBlog from './images/blog.svg';
 
 const socialLinks: {name: string; svg: string; url: string}[] = [
   {name: 'GitHub', svg: svgGitHub, url: 'https://github.com/sakai-akinobu'},
   {name: 'Instagram', svg: svgInstagram, url: 'https://www.instagram.com/sakai.akinobu/'},
   {name: '500px', svg: svg500px, url: 'https://500px.com/nobyu'},
   {name: 'Last.fm', svg: svgLastFm, url: 'http://www.lastfm.jp/user/nobyu'},
+  {name: 'Blog', svg: svgBlog, url: 'https://blog.akinobusakai.com/'},
 ];
 
 export default function Footer() {
