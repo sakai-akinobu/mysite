@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default function Head() {
+const Head: React.FC = () => {
   return (
     <head>
       <title>Akinobu Sakai | Front End Developer</title>
@@ -29,3 +29,5 @@ export default function Head() {
     </head>
   );
 }
+
+export default Head;

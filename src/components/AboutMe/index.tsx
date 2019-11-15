@@ -3,7 +3,7 @@ import * as React from 'react';
 import styles from './index.scss';
 import me from './images/me.jpg';
 
-export default function AboutMe() {
+const AboutMe: React.FC = () => {
   return (
     <section className={styles.container}>
       <div className={styles.inner}>
@@ -17,3 +17,5 @@ export default function AboutMe() {
     </section>
   );
 }
+
+export default AboutMe;

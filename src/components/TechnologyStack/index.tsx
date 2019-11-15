@@ -25,7 +25,7 @@ const technologies: {path: string; name: string}[] = [
   {path: svgNpm, name: 'npm'},
 ];
 
-export default function TechnologyStack() {
+const TechnologyStack: React.FC = () => {
   return (
     <section className={styles.container}>
       <p className={styles.description}>
@@ -47,3 +47,5 @@ export default function TechnologyStack() {
     </section>
   );
 }
+
+export default TechnologyStack;

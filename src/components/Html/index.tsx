@@ -3,7 +3,7 @@ import * as React from "react";
 import App from "../App";
 import Head from "../Head";
 
-export default function Html() {
+const Html: React.FC = () => {
   return (
     <>
       <html lang="en">
@@ -17,3 +17,5 @@ export default function Html() {
     </>
   );
 }
+
+export default Html;

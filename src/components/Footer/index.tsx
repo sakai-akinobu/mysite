@@ -15,7 +15,7 @@ const socialLinks: {name: string; svg: string; url: string}[] = [
   {name: 'Blog', svg: svgBlog, url: 'https://blog.akinobusakai.com/'},
 ];
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer>
       <div className={styles.container}>
@@ -37,3 +37,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

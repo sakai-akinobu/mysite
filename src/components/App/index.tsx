@@ -6,7 +6,7 @@ import TechnologyStack from '../TechnologyStack';
 import GitHub from '../GitHub';
 import Footer from '../Footer';
 
-export default function App() {
+const App: React.FC = () => {
   useEffect(() => {
     ScrollReveal().reveal('.transition', {
       origin: 'top',
@@ -27,3 +27,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;

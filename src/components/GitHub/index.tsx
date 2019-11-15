@@ -6,7 +6,7 @@ import 'github-calendar/dist/github-calendar-responsive.css';
 
 import styles from './index.scss';
 
-export default function GitHub() {
+const GitHub: React.FC = () => {
   const calenderRef = useRef(null);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -28,3 +28,5 @@ export default function GitHub() {
     </div>
   );
 }
+
+export default GitHub;
