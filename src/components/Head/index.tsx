@@ -14,7 +14,7 @@ const Head: React.FC = () => {
       <meta property="og:description" content="Front-end developer working in Tokyo." />
       <meta name="twitter:card" content="summary"></meta>
       <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"></link>
       <link rel="stylesheet" href="/dist/bundle.css"></link>
       <script src="/dist/bundle.js" defer></script>
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7106314-14"></script>
