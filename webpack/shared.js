@@ -29,9 +29,11 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              plugins: [
-                require('autoprefixer')(),
-              ],
+              postcssOptions: {
+                plugins: [
+                  ['autoprefixer'],
+                ],
+              },
             },
           },
         ],
@@ -45,26 +47,31 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: {
+                localIdentName: '[local]___[hash:base64:5]',
+              },
               importLoaders: 2,
               sourceMap: true,
-              localIdentName: '[local]___[hash:base64:5]',
             },
           },
           {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
-              plugins: [
-                require('autoprefixer')(),
-              ],
+              postcssOptions: {
+                plugins: [
+                  ['autoprefixer'],
+                ],
+              },
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              outputStyle: 'expanded',
               sourceMap: true,
+              sassOptions: {
+                outputStyle: 'expanded',
+              },
             },
           },
         ],
