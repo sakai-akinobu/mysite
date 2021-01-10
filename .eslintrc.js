@@ -19,7 +19,33 @@ module.exports = {
     },
   },
   rules: {
-    "@typescript-eslint/class-name-casing": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": ["camelCase"],
+      },
+      {
+        "selector": "class",
+        "format": ["camelCase"],
+      },
+      {
+        "selector": "typeAlias",
+        "format": ["PascalCase"],
+      },
+      {
+        "selector": "property",
+        "format": null,
+      },
+      {
+        "selector": "variable",
+        "format": [
+          "camelCase",
+          "PascalCase",
+        ],
+        "leadingUnderscore": "allow",
+      }
+    ],
     "@typescript-eslint/member-delimiter-style": "error",
     "@typescript-eslint/consistent-type-assertions": "error",
     "@typescript-eslint/type-annotation-spacing": "error",
