@@ -2,7 +2,8 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import App from './components/App';
-import './styles/global.scss';
+import './styles/global.css';
+import './styles/variables.css';
 
 ReactDOM.hydrate(
   <App />,

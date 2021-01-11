@@ -10,8 +10,8 @@
     "compile": "npx tsc --noEmit",
     "lint": "npx eslint src/**/*.tsx",
     "lint:fix": "npx eslint --fix src/**/*.tsx",
-    "stylelint": "npx stylelint src/**/*.scss",
-    "stylelint:fix": "npx stylelint --fix src/**/*.scss"
+    "stylelint": "npx stylelint src/**/*.css",
+    "stylelint:fix": "npx stylelint --fix src/**/*.css"
   },
   "author": "Akinobu SAKAI <sakai.akinobu@gmail.com> (https://github.com/sakai-akinobu)",
   "license": "MIT",

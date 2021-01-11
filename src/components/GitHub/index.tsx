@@ -4,7 +4,7 @@ import Calendar from 'github-calendar';
 import 'github-calendar/dist/github-calendar.css';
 import 'github-calendar/dist/github-calendar-responsive.css';
 
-import styles from './index.scss';
+import styles from './index.css';
 
 const GitHub: React.FC = () => {
   const calenderRef = useRef(null);

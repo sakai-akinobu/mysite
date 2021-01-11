@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import styles from './index.scss';
+import styles from './index.css';
 import me from './images/me.jpg';
 
 const AboutMe: React.FC = () => {
