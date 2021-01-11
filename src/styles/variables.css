@@ -1,0 +1,11 @@
+:root {
+  --color-pallet-white: #fff;
+  --color-pallet-grey-200: #eee;
+  --color-pallet-grey-500: #999;
+  --color-pallet-grey-800: #252c36;
+  --text-color-white: var(--color-pallet-grey-200);
+  --text-color-grey: var(--color-pallet-grey-500);
+  --text-color-black: var(--color-pallet-grey-800);
+  --background-color-dark: var(--color-pallet-grey-800);
+  --background-color-light: var(--color-pallet-white);
+}

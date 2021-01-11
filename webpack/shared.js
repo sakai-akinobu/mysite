@@ -21,36 +21,16 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 2,
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              postcssOptions: {
-                plugins: [
-                  ['autoprefixer'],
-                ],
-              },
-            },
-          },
-        ],
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
-            loader: 'css-loader',
-            options: {
               modules: {
+                mode: (resourcePath) => {
+                  if (/\/node_modules\/github-calendar\//.test(resourcePath)) {
+                    return 'global';
+                  }
+                  return 'local';
+                },
                 localIdentName: '[local]___[hash:base64:5]',
               },
-              importLoaders: 2,
+              importLoaders: 1,
               sourceMap: true,
             },
           },
@@ -62,15 +42,6 @@ module.exports = {
                 plugins: [
                   ['autoprefixer'],
                 ],
-              },
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              sassOptions: {
-                outputStyle: 'expanded',
               },
             },
           },

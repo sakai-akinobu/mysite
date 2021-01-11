@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import styles from './index.scss';
+import styles from './index.css';
 import svgGitHub from './images/github.svg';
 import svgInstagram from './images/instagram.svg';
 import svg500px from './images/500px.svg';
