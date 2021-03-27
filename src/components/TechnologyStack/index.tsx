@@ -3,9 +3,9 @@ import * as React from 'react';
 import styles from './index.css';
 import svgJavaScript from './images/javascript.svg';
 import svgTypeScript from './images/typescript.svg';
+import svgNextJs from './images/nextjs.svg';
 import svgBabel from './images/babel.svg';
 import svgReact from './images/react.svg';
-import svgRedux from './images/redux.svg';
 import svgEsLint from './images/eslint.svg';
 import svgPrettier from './images/prettier.svg';
 import svgNodeJs from './images/nodejs.svg';
@@ -17,7 +17,7 @@ const technologies: {path: string; name: string}[] = [
   {path: svgTypeScript, name: 'TypeScript'},
   {path: svgBabel, name: 'Babel'},
   {path: svgReact, name: 'React'},
-  {path: svgRedux, name: 'Redux'},
+  {path: svgNextJs, name: 'Next.js'},
   {path: svgEsLint, name: 'ESLint'},
   {path: svgPrettier, name: 'Prettier'},
   {path: svgJest, name: 'Jest'},
