@@ -16,6 +16,6 @@ const Html: React.FC = () => {
       </html>
     </>
   );
-}
+};
 
 export default Html;
