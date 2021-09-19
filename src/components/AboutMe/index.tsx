@@ -8,7 +8,13 @@ const AboutMe: React.FC = () => {
     <section className={styles.container}>
       <div className={styles.inner}>
         <div>
-          <img src={me} className={styles.me} alt="me" />
+          <img
+            src={me}
+            className={styles.me}
+            width={120}
+            height={120}
+            alt="me"
+          />
         </div>
         <h1 className={styles.hello}>Hello, I&apos;m Akinobu!</h1>
         <p>Front-end developer based in Tokyo, Japan.</p>
