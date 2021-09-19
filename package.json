@@ -11,7 +11,9 @@
     "lint": "npx eslint src/**/*.tsx",
     "lint:fix": "npx eslint --fix src/**/*.tsx",
     "stylelint": "npx stylelint src/**/*.css",
-    "stylelint:fix": "npx stylelint --fix src/**/*.css"
+    "stylelint:fix": "npx stylelint --fix src/**/*.css",
+    "format": "npx prettier --check ./src",
+    "format:fix": "npx prettier --write ./src"
   },
   "author": "Akinobu SAKAI <sakai.akinobu@gmail.com> (https://github.com/sakai-akinobu)",
   "license": "MIT",
