@@ -1,5 +1,5 @@
 import App from "../App";
-import Head from "../Head";
+import Head from "../Script";
 
 const Html: React.FC = () => {
   return (
