@@ -2,15 +2,15 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:14.15.4
-      
+      - image: cimg/node:18.16.0
+
     working_directory: ~/repo
 
     steps:
       - checkout
       - restore_cache:
           keys:
-          - v2-dependencies-{{ checksum "package-lock.json" }}
+            - v2-dependencies-{{ checksum "package-lock.json" }}
       - run: npm install
       - save_cache:
           paths:
@@ -19,4 +19,3 @@ jobs:
       - run: npm run compile
       - run: npm run lint
       - run: npm run format
-      - run: npm run stylelint
