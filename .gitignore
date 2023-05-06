@@ -2,3 +2,5 @@
 /public/index.html
 /public/dist
 /tmp
+/.next
+/tsconfig.tsbuildinfo

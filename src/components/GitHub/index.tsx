@@ -1,10 +1,10 @@
-import * as React from "react";
+"use client";
 import { useState, useEffect, useRef } from "react";
 import Calendar from "github-calendar";
 import "github-calendar/dist/github-calendar.css";
 import "github-calendar/dist/github-calendar-responsive.css";
 
-import styles from "./index.css";
+import styles from "./index.module.css";
 
 const GitHub: React.FC = () => {
   const calenderRef = useRef(null);

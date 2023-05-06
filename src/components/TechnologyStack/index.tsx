@@ -1,6 +1,6 @@
-import * as React from "react";
+import Image from "next/image";
 
-import styles from "./index.css";
+import styles from "./index.module.css";
 import svgJavaScript from "./images/javascript.svg";
 import svgTypeScript from "./images/typescript.svg";
 import svgNextJs from "./images/nextjs.svg";
@@ -36,7 +36,7 @@ const TechnologyStack: React.FC = () => {
         {technologies.map((technology, index) => (
           <div key={index} className={styles.logo}>
             <div className={styles.svgContainer}>
-              <img
+              <Image
                 className={styles.svg}
                 src={technology.path}
                 alt={technology.name}

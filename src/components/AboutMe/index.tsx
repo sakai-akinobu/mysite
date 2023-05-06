@@ -1,6 +1,6 @@
-import * as React from "react";
+import Image from "next/image";
 
-import styles from "./index.css";
+import styles from "./index.module.css";
 import me from "./images/me.jpg";
 
 const AboutMe: React.FC = () => {
@@ -8,7 +8,7 @@ const AboutMe: React.FC = () => {
     <section className={styles.container}>
       <div className={styles.inner}>
         <div>
-          <img
+          <Image
             src={me}
             className={styles.me}
             width={120}

@@ -6,14 +6,8 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [
-    "react",
-    "@typescript-eslint",
-  ],
-  extends: [
-    "plugin:react/recommended",
-    "prettier",
-  ],
+  plugins: ["react", "@typescript-eslint"],
+  extends: ["plugin:react/recommended", "plugin:react/jsx-runtime", "prettier"],
   settings: {
     react: {
       version: "detect",
@@ -23,29 +17,26 @@ module.exports = {
     "@typescript-eslint/naming-convention": [
       "error",
       {
-        "selector": "default",
-        "format": ["camelCase"],
+        selector: "default",
+        format: ["camelCase"],
       },
       {
-        "selector": "class",
-        "format": ["camelCase"],
+        selector: "class",
+        format: ["camelCase"],
       },
       {
-        "selector": "typeAlias",
-        "format": ["PascalCase"],
+        selector: "typeAlias",
+        format: ["PascalCase"],
       },
       {
-        "selector": "property",
-        "format": null,
+        selector: "property",
+        format: null,
       },
       {
-        "selector": "variable",
-        "format": [
-          "camelCase",
-          "PascalCase",
-        ],
-        "leadingUnderscore": "allow",
-      }
+        selector: "variable",
+        format: ["camelCase", "PascalCase"],
+        leadingUnderscore: "allow",
+      },
     ],
     "@typescript-eslint/member-delimiter-style": "error",
     "@typescript-eslint/consistent-type-assertions": "error",
