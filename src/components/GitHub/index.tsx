@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import Calendar from "github-calendar";
 import "github-calendar/dist/github-calendar.css";

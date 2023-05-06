@@ -1,5 +1,3 @@
-import * as React from "react";
-
 const Head: React.FC = () => {
   return (
     <head>

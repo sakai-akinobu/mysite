@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import styles from "./index.css";
 import svgGitHub from "./images/github.svg";
 import svgInstagram from "./images/instagram.svg";

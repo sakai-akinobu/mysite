@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import styles from "./index.css";
 import svgJavaScript from "./images/javascript.svg";
 import svgTypeScript from "./images/typescript.svg";
