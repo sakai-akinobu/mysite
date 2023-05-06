@@ -21,9 +21,9 @@
     }
   },
   "devDependencies": {
+    "@types/node": "20.1.0",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.4",
-    "@types/scrollreveal": "0.0.6",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
     "eslint": "^8.40.0",
