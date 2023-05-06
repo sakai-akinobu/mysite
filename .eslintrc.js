@@ -7,7 +7,7 @@ module.exports = {
     },
   },
   plugins: ["react", "@typescript-eslint"],
-  extends: ["plugin:react/recommended", "prettier"],
+  extends: ["plugin:react/recommended", "plugin:react/jsx-runtime", "prettier"],
   settings: {
     react: {
       version: "detect",
