@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "",
-    "build": "",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "compile": "npx tsc --noEmit",
     "lint": "npx eslint src/**/*.tsx",
     "lint:fix": "npx eslint --fix src/**/*.tsx",
