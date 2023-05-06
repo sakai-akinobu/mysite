@@ -1,4 +1,4 @@
-import styles from "./index.css";
+import styles from "./index.module.css";
 import svgJavaScript from "./images/javascript.svg";
 import svgTypeScript from "./images/typescript.svg";
 import svgNextJs from "./images/nextjs.svg";

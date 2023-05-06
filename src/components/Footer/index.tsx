@@ -1,4 +1,4 @@
-import styles from "./index.css";
+import styles from "./index.module.css";
 import svgGitHub from "./images/github.svg";
 import svgInstagram from "./images/instagram.svg";
 import svg500px from "./images/500px.svg";

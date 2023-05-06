@@ -23,8 +23,3 @@
 .calendar.loaded {
   opacity: 1;
 }
-
-:global .contrib-footer {
-  display: flex;
-  height: auto;
-}

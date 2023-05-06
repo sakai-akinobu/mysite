@@ -1,4 +1,6 @@
 import { ReactElement } from "react";
+import "../src/styles/global.css";
+import "../src/styles/variables.css";
 
 type RootLayoutProps = Readonly<{
   children: ReactElement;
