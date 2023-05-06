@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "./index.module.css";
 import svgGitHub from "./images/github.svg";
 import svgInstagram from "./images/instagram.svg";
@@ -26,7 +28,7 @@ const Footer: React.FC = () => {
             <div key={index} className={styles.logo}>
               <a href={url}>
                 <div className={styles.svgContainer}>
-                  <img className={styles.svg} src={svg} alt={name} />
+                  <Image className={styles.svg} src={svg} alt={name} />
                 </div>
               </a>
             </div>
