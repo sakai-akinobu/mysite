@@ -4,3 +4,4 @@
 /tmp
 /.next
 /tsconfig.tsbuildinfo
+.DS_Store
