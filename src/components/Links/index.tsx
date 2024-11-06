@@ -15,20 +15,18 @@ const socialLinks: { name: string; svg: string; url: string }[] = [
 
 export const Links: React.FC = () => {
   return (
-    <footer>
-      <div className={styles.container}>
-        <div className={styles.logoContainer}>
-          {socialLinks.map(({ name, svg, url }, index) => (
-            <div key={index} className={styles.logo}>
-              <a href={url}>
-                <div className={styles.svgContainer}>
-                  <Image className={styles.svg} src={svg} alt={name} />
-                </div>
-              </a>
-            </div>
-          ))}
-        </div>
+    <div className={styles.container}>
+      <div className={styles.logoContainer}>
+        {socialLinks.map(({ name, svg, url }, index) => (
+          <div key={index} className={styles.logo}>
+            <a href={url}>
+              <div className={styles.svgContainer}>
+                <Image className={styles.svg} src={svg} alt={name} />
+              </div>
+            </a>
+          </div>
+        ))}
       </div>
-    </footer>
+    </div>
   );
 };
