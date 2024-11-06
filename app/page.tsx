@@ -1,13 +1,13 @@
 import Script from "../src/components/Script";
 import AboutMe from "../src/components/AboutMe";
-import Footer from "../src/components/Footer";
+import Links from "../src/components/Links";
 
 const Page = () => {
   return (
     <>
       <Script />
       <AboutMe />
-      <Footer />
+      <Links />
     </>
   );
 };
