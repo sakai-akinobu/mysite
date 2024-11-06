@@ -28,9 +28,6 @@ export const Links: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className={styles.copyright}>
-          &copy;Akinobu Sakai {new Date().getFullYear()}
-        </div>
       </div>
     </footer>
   );

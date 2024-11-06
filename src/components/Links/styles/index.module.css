@@ -35,9 +35,3 @@
   width: 100%;
   max-height: 100%;
 }
-
-.copyright {
-  flex: 1 1 auto;
-  color: var(--text-color-grey);
-  margin-top: 20px;
-}
