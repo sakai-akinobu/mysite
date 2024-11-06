@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   padding: 50px 40px;
-  background: var(--background-color-dark);
 }
 
 .logoContainer {
@@ -27,8 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .svg {
