@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "./index.module.css";
+import styles from "./styles/index.module.css";
 import me from "./images/me.png";
 
 export const AboutMe: React.FC = () => {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "./index.module.css";
+import styles from "./styles/index.module.css";
 import svgGitHub from "./images/github.svg";
 import svgInstagram from "./images/instagram.svg";
 
