@@ -5,26 +5,16 @@ import me from "./images/me.png";
 
 const AboutMe: React.FC = () => {
   return (
-    <section className={styles.container}>
-      <div className={styles.inner}>
-        <div>
-          <Image
-            src={me}
-            className={styles.me}
-            width={120}
-            height={120}
-            alt="me"
-          />
-        </div>
-        <h1 className={styles.hello}>Hello, I&apos;m Akinobu!</h1>
-        <p>Front-end developer based in Tokyo, Japan.</p>
-        <p>
-          Front-end engineer interested in creating user interfaces. I has
-          several years of experience as a back-end engineer. I like to make
-          people&apos;s lives better with engineering.
-        </p>
-      </div>
-    </section>
+    <div className={styles.container}>
+      <Image src={me} className={styles.me} width={100} height={100} alt="me" />
+      <h1 className={styles.hello}>Hi, I&apos;m Nob</h1>
+      <p className={styles.introduction}>
+        Software Engineer, Creating useful Web Applications and user-friendly
+        Interfaces.
+        <br />
+        All my abilities are for someone else.
+      </p>
+    </div>
   );
 };
 
