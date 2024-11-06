@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/node:18.16.0
+      - image: cimg/node:20.18.0
 
     working_directory: ~/repo
 
@@ -10,12 +10,12 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v2-dependencies-{{ checksum "package-lock.json" }}
+            - v3-dependencies-{{ checksum "package-lock.json" }}
       - run: npm install
       - save_cache:
           paths:
             - node_modules
-          key: v2-dependencies-{{ checksum "package-lock.json" }}
+          key: v3-dependencies-{{ checksum "package-lock.json" }}
       - run: npm run type-check
       - run: npm run lint
       - run: npm run format
