@@ -7,7 +7,7 @@ const scriptForGA = `
   gtag('config', 'UA-7106314-14');
 `;
 
-const Script: React.FC = () => {
+export const Script: React.FC = () => {
   return (
     <>
       <NextScript
@@ -22,5 +22,3 @@ const Script: React.FC = () => {
     </>
   );
 };
-
-export default Script;
