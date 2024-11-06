@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./index.module.css";
 import me from "./images/me.png";
 
-const AboutMe: React.FC = () => {
+export const AboutMe: React.FC = () => {
   return (
     <div className={styles.container}>
       <Image src={me} className={styles.me} width={100} height={100} alt="me" />
@@ -17,5 +17,3 @@ const AboutMe: React.FC = () => {
     </div>
   );
 };
-
-export default AboutMe;

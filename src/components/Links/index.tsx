@@ -13,7 +13,7 @@ const socialLinks: { name: string; svg: string; url: string }[] = [
   },
 ];
 
-const Links: React.FC = () => {
+export const Links: React.FC = () => {
   return (
     <footer>
       <div className={styles.container}>
@@ -35,5 +35,3 @@ const Links: React.FC = () => {
     </footer>
   );
 };
-
-export default Links;

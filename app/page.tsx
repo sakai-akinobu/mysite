@@ -1,6 +1,6 @@
-import Script from "../src/components/Script";
-import AboutMe from "../src/components/AboutMe";
-import Links from "../src/components/Links";
+import { Script } from "../src/components/Script";
+import { AboutMe } from "../src/components/AboutMe";
+import { Links } from "../src/components/Links";
 
 const Page = () => {
   return (
