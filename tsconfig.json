@@ -3,11 +3,14 @@
     "strict": true,
     "sourceMap": true,
     "noImplicitAny": true,
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "module": "esnext",
-    "target": "es5",
-    "jsx": "preserve",
-    "moduleResolution": "node",
+    "target": "es2017",
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,8 +19,20 @@
     "incremental": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "plugins": [{ "name": "next" }]
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
