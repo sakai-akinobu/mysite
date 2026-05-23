@@ -1,1 +1,1 @@
-npm run type-check && npm run lint && npm run format
+pnpm run type-check && pnpm run lint && pnpm run format
